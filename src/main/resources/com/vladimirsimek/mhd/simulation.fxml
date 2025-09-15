@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vladimirsimek.mhd.SimulationController"
+            style="-fx-background-color: #fcc0c0;">
+
+   <!-- Create a "mission" vertical box in the top right corner, which will contain 4 tasks, then create a map in the middle which will show a line with 3 points with one being in the middle and the other two on both ends of the line "Mission" vertical box in the top-right corner -->
+   <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Missions" />
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+         <CheckBox fx:id="isNewStopNamedRight" disable="true" />
+         <Label text="Create a new stop called &quot;Stop 1&quot;" />
+      </HBox>
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+         <CheckBox fx:id="isNewBusNamedRight" disable="true" />
+         <Label text="Create a new bus called &quot;Bus 1&quot;" />
+      </HBox>
+   </VBox>
+
+   <!-- Map showing a line with 3 points -->
+   <Pane prefHeight="400.0" prefWidth="600.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0">
+      <Line endX="550.0" endY="200.0" startX="50.0" startY="200.0" strokeWidth="2.0" />
+      <Circle centerX="50.0" centerY="200.0" fill="red" radius="5.0" />
+      <Circle fx:id="freeSpaceCircle" centerX="300.0" centerY="200.0" fill="LIME" radius="5.0" />
+      <Circle centerX="550.0" centerY="200.0" fill="red" radius="5.0" />
+      <Label layoutX="29.0" layoutY="210.0" style="-fx-font-size: 12px;" text="Depot 1" />
+      <Label layoutX="272.0" layoutY="210.0" style="-fx-font-size: 12px;" text="Free space" />
+      <Label layoutX="524.0" layoutY="210.0" style="-fx-font-size: 12px;" text="Final Stop" />
+
+      <Button layoutX="24.0" layoutY="178.0" mnemonicParsing="false" onAction="#onDepotClicked" opacity="0.0"
+              prefHeight="52.0" prefWidth="52.0" text="Button" />
+      <Button layoutX="274.0" layoutY="175.0" mnemonicParsing="false" onAction="#onFreeSpaceClicked" opacity="0.0"
+              prefHeight="52.0" prefWidth="52.0" text="Button" />
+      <Button layoutX="524.0" layoutY="175.0" mnemonicParsing="false" onAction="#onFinalStopClicked" opacity="0.0"
+              prefHeight="52.0" prefWidth="52.0" text="Button" />
+   </Pane>
+</AnchorPane>

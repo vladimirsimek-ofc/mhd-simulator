@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vladimirsimek.mhd.DepotHudController"
+      style="-fx-background-color: #fcc0c0;">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Depot Name -->
+    <Label fx:id="depotName" alignment="CENTER" contentDisplay="TOP" prefHeight="51.0" prefWidth="345.0" text="Depot 1">
+        <font>
+            <Font size="36.0" />
+        </font>
+    </Label>
+
+    <!-- Location State -->
+    <Label fx:id="locationState" alignment="CENTER" contentDisplay="TOP" layoutX="237.0" layoutY="198.0" prefHeight="30.0" prefWidth="345.0" text="Location State:">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <!-- Depot Capacity -->
+    <Label fx:id="depotCapacity" alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="345.0" text="Depot 1 Capacity: ">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <!-- Vehicles -->
+    <Label fx:id="vehicleText" alignment="CENTER" contentDisplay="TOP" layoutX="237.0" layoutY="166.0" prefHeight="30.0" prefWidth="345.0" text="Vehicles:">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <!-- Vehicle Buttons -->
+    <VBox maxHeight="160.0" maxWidth="240.0" minWidth="240.0" prefWidth="240.0">
+        <children>
+            <Button fx:id="vehicleOne" maxWidth="240.0" minWidth="240.0" mnemonicParsing="false" onAction="#onVehicleOneClicked" prefWidth="240.0" text="Bus 1"
+                    style="-fx-background-color: linear-gradient(to right, #34D399, #10B981); -fx-text-fill: #ffffff; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-cursor: hand;"/>
+        </children>
+    </VBox>
+
+    <!-- Welcome Text -->
+    <Label fx:id="welcomeText" />
+
+    <!-- Create New Bus Button -->
+    <Button fx:id="createNewBusButton" layoutX="290.0" layoutY="376.0" onAction="#onCreateNewBusClick" prefHeight="40.0" prefWidth="240.0" text="Create a new bus"
+            style="-fx-background-color: linear-gradient(to right, #60A5FA, #3B82F6); -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-cursor: hand;"/>
+
+    <!-- Return Button -->
+    <Button layoutX="290.0" layoutY="376.0" onAction="#onReturnClick" prefHeight="40.0" prefWidth="240.0" text="Return"
+            style="-fx-background-color: linear-gradient(to right, #F87171, #EF4444); -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-cursor: hand;"/>
+</VBox>

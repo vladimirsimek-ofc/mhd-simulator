@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vladimirsimek.mhd.logic</OriginalElement>
+  <nodes>
+    <node x="-93.0" y="111.5">com.vladimirsimek.mhd.logic.Depot</node>
+    <node x="17.5" y="771.5">com.vladimirsimek.mhd.logic.Train</node>
+    <node x="323.5" y="436.5">com.vladimirsimek.mhd.logic.LocationState</node>
+    <node x="217.0" y="563.5">com.vladimirsimek.mhd.logic.ElectricVehicle</node>
+    <node x="-69.5" y="575.5">com.vladimirsimek.mhd.logic.GasVehicle</node>
+    <node x="468.0" y="576.5">com.vladimirsimek.mhd.logic.VehicleState</node>
+    <node x="167.0" y="111.5">com.vladimirsimek.mhd.logic.Station</node>
+    <node x="427.0" y="111.5">com.vladimirsimek.mhd.logic.Stop</node>
+    <node x="-37.5" y="-14.0">com.vladimirsimek.mhd.logic.Location</node>
+    <node x="-102.5" y="288.5">com.vladimirsimek.mhd.logic.Vehicle</node>
+    <node x="257.5" y="931.5">com.vladimirsimek.mhd.logic.Tram</node>
+    <node x="497.5" y="771.5">com.vladimirsimek.mhd.logic.Subway</node>
+    <node x="-102.5" y="943.5">com.vladimirsimek.mhd.logic.Bus</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vladimirsimek.mhd.logic.ElectricVehicle" target="com.vladimirsimek.mhd.logic.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-56.5" />
+      <point x="300.0" y="520.0" />
+      <point x="0.0" y="520.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.Subway" target="com.vladimirsimek.mhd.logic.ElectricVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="600.0" y="740.0" />
+      <point x="360.0" y="740.0" />
+      <point x="360.0" y="700.0" />
+      <point x="200.0" y="700.0" />
+      <point x="200.0" y="540.0" />
+      <point x="300.0" y="540.0" />
+      <point x="0.0" y="-56.5" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.Stop" target="com.vladimirsimek.mhd.logic.Location" relationship="GENERALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="540.0" y="80.0" />
+      <point x="20.0" y="80.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.GasVehicle" target="com.vladimirsimek.mhd.logic.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.Depot" target="com.vladimirsimek.mhd.logic.Location" relationship="GENERALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.Train" target="com.vladimirsimek.mhd.logic.ElectricVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="120.0" y="740.0" />
+      <point x="360.0" y="740.0" />
+      <point x="360.0" y="700.0" />
+      <point x="200.0" y="700.0" />
+      <point x="200.0" y="540.0" />
+      <point x="300.0" y="540.0" />
+      <point x="0.0" y="-56.5" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.Bus" target="com.vladimirsimek.mhd.logic.GasVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-56.5" />
+      <point x="0.0" y="760.0" />
+      <point x="100.0" y="760.0" />
+      <point x="100.0" y="540.0" />
+      <point x="0.0" y="540.0" />
+      <point x="0.0" y="-44.5" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.Station" target="com.vladimirsimek.mhd.logic.Location" relationship="GENERALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="280.0" y="80.0" />
+      <point x="20.0" y="80.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.vladimirsimek.mhd.logic.Tram" target="com.vladimirsimek.mhd.logic.ElectricVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="360.0" y="700.0" />
+      <point x="200.0" y="700.0" />
+      <point x="200.0" y="540.0" />
+      <point x="300.0" y="540.0" />
+      <point x="0.0" y="-56.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5194922937443336" showDependencies="false" x="603.6125654450261" y="287.0942408376961" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

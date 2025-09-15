@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vladimirsimek.mhd.BusEditorController"
+      style="-fx-background-color: #fcc0c0;">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Editable Vehicle Name -->
+    <VBox alignment="CENTER" spacing="2.0">
+        <TextField fx:id="vehicleName" alignment="CENTER" focusTraversable="false" prefHeight="51.0" prefWidth="345.0"
+                   style="-fx-background-color: transparent; -fx-border-width: 0; -fx-font-size: 36px; -fx-text-fill: black; -fx-padding: 0;" text="Bus 1">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </TextField>
+        <Label style="-fx-font-size: 14px; -fx-text-fill: grey;" text="(Click to edit)" />
+    </VBox>
+
+    <!-- Vehicle State -->
+    <Label fx:id="vehicleState" layoutX="371.0" layoutY="227.0" text="Vehicle state:" style="-fx-font-size: 18px;" />
+
+    <!-- Gas Level -->
+    <Label fx:id="gasLevel" text="Gas level: " style="-fx-font-size: 18px;" />
+
+    <!-- Passenger Count -->
+    <Label fx:id="passengerCount" layoutX="371.0" layoutY="250.0" text="Passenger count: " style="-fx-font-size: 18px;" />
+
+    <!-- Confirm Button -->
+    <Button fx:id="confirmEditingClickButton" disable="true" layoutX="290.0" layoutY="376.0" onAction="#onConfirmEditingClick" prefHeight="40.0" prefWidth="240.0" text="Confirm editing"
+            style="-fx-background-color: linear-gradient(to right, #34D399, #10B981); -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-cursor: hand;" />
+
+    <!-- Delete Vehicle Button -->
+    <Button layoutX="290.0" layoutY="439.0" onAction="#onDeleteVehicleClick" prefHeight="40.0" prefWidth="240.0" text="Delete vehicle"
+            style="-fx-background-color: linear-gradient(to right, #F87171, #EF4444); -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-cursor: hand;" />
+
+    <!-- Return Without Editing Button -->
+    <Button layoutX="290.0" layoutY="376.0" onAction="#onReturnWithoutEditingClick" prefHeight="40.0" prefWidth="240.0" text="Return without editing"
+            style="-fx-background-color: linear-gradient(to right, #60A5FA, #3B82F6); -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10px; -fx-cursor: hand;" />
+</VBox>
